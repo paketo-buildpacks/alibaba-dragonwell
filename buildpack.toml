@@ -73,8 +73,8 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 id      = "jdk"
 name    = "Dragonwell JDK"
 version = "11.0.10"
-uri     = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.10.5_jdk-11.0.10-ga/Alibaba_Dragonwell_11.0.10.5_linux_x64.tar.gz"
-sha256  = "4f06b7ef58ad0d43dc9a19624e493558e99c56c9dd41eced0d195c4f2f9be7f4"
+uri     = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.11.6_jdk-11.0.11-ga/Alibaba_Dragonwell_11.0.11.6_x64_linux.tar.gz"
+sha256  = "cf1fced88d829f9995a666cb5a032275d10e94294dc9c16a3365839153317236"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
 [[metadata.dependencies]]
