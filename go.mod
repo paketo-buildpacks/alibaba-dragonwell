@@ -1,4 +1,4 @@
-module github.com/eddumelendez/dragonwell
+module github.com/paketo-buildpacks/alibaba-dragonwell
 
 go 1.15
 
