@@ -44,8 +44,9 @@ jobs:
             - id: dependency
               uses: docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
               with:
-                type: jdk
-                version: "8"
+                glob: Alibaba_Dragonwell_[\\d\\.]+_x64_linux.tar.gz$
+                repository: dragonwell8
+                token: ${{ secrets.JAVA_GITHUB_TOKEN }}
             - id: buildpack
               name: Update Buildpack Dependency
               run: |
