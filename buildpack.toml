@@ -30,7 +30,10 @@ uri  = "https://github.com/paketo-buildpacks/alibaba-dragonwell/blob/main/LICENS
 id = "io.buildpacks.stacks.bionic"
 
 [[stacks]]
-id = "org.cloudfoundry.stacks.cflinuxfs3"
+id = "io.paketo.stacks.tiny"
+
+[[stacks]]
+id = "*"
 
 [[metadata.configurations]]
 name        = "BPL_JVM_HEAD_ROOM"
@@ -67,7 +70,7 @@ name    = "Dragonwell JDK"
 version = "8.0.292"
 uri     = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.7.7_jdk8u292-ga/Alibaba_Dragonwell_8.7.7_x64_linux.tar.gz"
 sha256  = "799b336da16e4b4c1e25a332e457ed396ef575579f5e9cfcf0332ad29e2ca4e8"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -79,7 +82,7 @@ name    = "Dragonwell JDK"
 version = "11.0.11"
 uri     = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.11.7_jdk-11.0.11-ga/Alibaba_Dragonwell_11.0.11.7_x64_linux.tar.gz"
 sha256  = "84d62e0daa5f1609a9086cffe07b8bdad734ad3b012827bb19a99eee8bbd41f3"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -91,7 +94,7 @@ name    = "JVMKill Agent"
 version = "1.16.0"
 uri     = "https://github.com/cloudfoundry/jvmkill/releases/download/v1.16.0.RELEASE/jvmkill-1.16.0-RELEASE.so"
 sha256  = "a3092627b082cb3cdbbe4b255d35687126aa604e6b613dcda33be9f7e1277162"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
