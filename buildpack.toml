@@ -54,6 +54,12 @@ default     = "250"
 launch      = true
 
 [[metadata.configurations]]
+name        = "BP_JVM_TYPE"
+description = "the JVM type - JDK or JRE"
+default     = "JRE"
+build       = true
+
+[[metadata.configurations]]
 name        = "BP_JVM_VERSION"
 description = "the Java version"
 default     = "11"
