@@ -91,9 +91,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 [[metadata.dependencies]]
 id      = "jdk"
 name    = "Dragonwell JDK"
-version = "11.0.11"
-uri     = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.11.7_jdk-11.0.11-ga/Alibaba_Dragonwell_11.0.11.7_x64_linux.tar.gz"
-sha256  = "84d62e0daa5f1609a9086cffe07b8bdad734ad3b012827bb19a99eee8bbd41f3"
+version = "11.0.12"
+uri     = "https://github.com/alibaba/dragonwell11/releases/download/11.0.12.8-GA/Alibaba_Dragonwell_11.0.12.8_x64_linux.tar.gz"
+sha256  = "045166d6dee2e55e2571bb9c02dcf822b538d44a9b5aaac918032e8e137ca512"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
