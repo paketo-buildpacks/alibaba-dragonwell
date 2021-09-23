@@ -33,9 +33,3 @@ dependencies:
     glob:       Alibaba_Dragonwell_[\d\.]+_x64_linux.tar.gz$
     repository: dragonwell11
     token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
-- id:   jvmkill
-  uses: docker://ghcr.io/paketo-buildpacks/actions/github-release-dependency:main
-  with:
-    owner:      cloudfoundry
-    repository: jvmkill
-    token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
