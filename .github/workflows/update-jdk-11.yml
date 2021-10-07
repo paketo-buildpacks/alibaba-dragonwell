@@ -47,8 +47,8 @@ jobs:
                 glob: Alibaba_Dragonwell_[\d\.]+_x64_linux.tar.gz$
                 repository: dragonwell11
                 token: ${{ secrets.JAVA_GITHUB_TOKEN }}
-            - id: buildpack
-              name: Update Buildpack Dependency
+            - name: Update Buildpack Dependency
+              id: buildpack
               run: |
                 #!/usr/bin/env bash
 
