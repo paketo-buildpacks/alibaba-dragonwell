@@ -15,142 +15,133 @@
 api = "0.6"
 
 [buildpack]
-id       = "paketo-buildpacks/alibaba-dragonwell"
-name     = "Paketo Alibaba Dragonwell Buildpack"
-version  = "{{.version}}"
-homepage = "https://github.com/paketo-buildpacks/alibaba-dragonwell"
-description = "A Cloud Native Buildpack that provides the Alibaba Dragonwell implementations of JREs and JDKs"
-keywords    = ["java", "jvm", "jre", "jdk"]
+  description = "A Cloud Native Buildpack that provides the Alibaba Dragonwell implementations of JREs and JDKs"
+  homepage = "https://github.com/paketo-buildpacks/alibaba-dragonwell"
+  id = "paketo-buildpacks/alibaba-dragonwell"
+  keywords = ["java", "jvm", "jre", "jdk"]
+  name = "Paketo Alibaba Dragonwell Buildpack"
+  version = "{{.version}}"
 
-[[buildpack.licenses]]
-type = "Apache-2.0"
-uri  = "https://github.com/paketo-buildpacks/alibaba-dragonwell/blob/main/LICENSE"
-
-[[stacks]]
-id = "io.buildpacks.stacks.bionic"
-
-[[stacks]]
-id = "io.paketo.stacks.tiny"
-
-[[stacks]]
-id = "*"
-
-[[metadata.configurations]]
-name        = "BPL_JVM_HEAD_ROOM"
-description = "the headroom in memory calculation"
-default     = "0"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JVM_LOADED_CLASS_COUNT"
-description = "the number of loaded classes in memory calculation"
-default     = "35% of classes"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JVM_THREAD_COUNT"
-description = "the number of threads in memory calculation"
-default     = "250"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JAVA_NMT_ENABLED"
-description = "enables Java Native Memory Tracking (NMT)"
-default     = "true"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JAVA_NMT_LEVEL"
-description = "configure level of NMT, summary or detail"
-default     = "summary"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JMX_ENABLED"
-description = "enables Java Management Extensions (JMX)"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JMX_PORT"
-description = "configure the JMX port"
-default     = "5000"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_ENABLED"
-description = "enables Java remote debugging support"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_PORT"
-description = "configure the remote debugging port"
-default     = "8000"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_SUSPEND"
-description = "configure whether to suspend execution until a debugger has attached"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_HEAP_DUMP_PATH"
-description = "write heap dumps on error to this path"
-default     = ""
-launch      = true
-
-[[metadata.configurations]]
-name        = "BP_JVM_TYPE"
-description = "the JVM type - JDK or JRE"
-default     = "JRE"
-build       = true
-
-[[metadata.configurations]]
-name        = "BP_JVM_VERSION"
-description = "the Java version"
-default     = "11"
-build       = true
-
-[[metadata.configurations]]
-name        = "JAVA_TOOL_OPTIONS"
-description = "the JVM launch flags"
-launch      = true
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Dragonwell JDK"
-version = "8.0.302"
-uri     = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.8.9_jdk8u302-ga/Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz"
-sha256  = "cd83125cde0a3a2a12d04c72abe61a522af9071a3d7ada8156c42a51e6dbcf7e"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Dragonwell JDK"
-version = "11.0.12"
-uri     = "https://github.com/alibaba/dragonwell11/releases/download/11.0.12.8-GA/Alibaba_Dragonwell_11.0.12.8_x64_linux.tar.gz"
-sha256  = "045166d6dee2e55e2571bb9c02dcf822b538d44a9b5aaac918032e8e137ca512"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+  [[buildpack.licenses]]
+    type = "Apache-2.0"
+    uri = "https://github.com/paketo-buildpacks/alibaba-dragonwell/blob/main/LICENSE"
 
 [metadata]
-pre-package   = "scripts/build.sh"
-include-files = [
-  "LICENSE",
-  "NOTICE",
-  "README.md",
-  "bin/build",
-  "bin/detect",
-  "bin/helper",
-  "bin/main",
-  "buildpack.toml",
-]
+  include-files = ["LICENSE", "NOTICE", "README.md", "bin/build", "bin/detect", "bin/helper", "bin/main", "buildpack.toml"]
+  pre-package = "scripts/build.sh"
+
+  [[metadata.configurations]]
+    default = "0"
+    description = "the headroom in memory calculation"
+    launch = true
+    name = "BPL_JVM_HEAD_ROOM"
+
+  [[metadata.configurations]]
+    default = "35% of classes"
+    description = "the number of loaded classes in memory calculation"
+    launch = true
+    name = "BPL_JVM_LOADED_CLASS_COUNT"
+
+  [[metadata.configurations]]
+    default = "250"
+    description = "the number of threads in memory calculation"
+    launch = true
+    name = "BPL_JVM_THREAD_COUNT"
+
+  [[metadata.configurations]]
+    default = "true"
+    description = "enables Java Native Memory Tracking (NMT)"
+    launch = true
+    name = "BPL_JAVA_NMT_ENABLED"
+
+  [[metadata.configurations]]
+    default = "summary"
+    description = "configure level of NMT, summary or detail"
+    launch = true
+    name = "BPL_JAVA_NMT_LEVEL"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "enables Java Management Extensions (JMX)"
+    launch = true
+    name = "BPL_JMX_ENABLED"
+
+  [[metadata.configurations]]
+    default = "5000"
+    description = "configure the JMX port"
+    launch = true
+    name = "BPL_JMX_PORT"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "enables Java remote debugging support"
+    launch = true
+    name = "BPL_DEBUG_ENABLED"
+
+  [[metadata.configurations]]
+    default = "8000"
+    description = "configure the remote debugging port"
+    launch = true
+    name = "BPL_DEBUG_PORT"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "configure whether to suspend execution until a debugger has attached"
+    launch = true
+    name = "BPL_DEBUG_SUSPEND"
+
+  [[metadata.configurations]]
+    default = ""
+    description = "write heap dumps on error to this path"
+    launch = true
+    name = "BPL_HEAP_DUMP_PATH"
+
+  [[metadata.configurations]]
+    build = true
+    default = "JRE"
+    description = "the JVM type - JDK or JRE"
+    name = "BP_JVM_TYPE"
+
+  [[metadata.configurations]]
+    build = true
+    default = "11"
+    description = "the Java version"
+    name = "BP_JVM_VERSION"
+
+  [[metadata.configurations]]
+    description = "the JVM launch flags"
+    launch = true
+    name = "JAVA_TOOL_OPTIONS"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Dragonwell JDK"
+    sha256 = "cd83125cde0a3a2a12d04c72abe61a522af9071a3d7ada8156c42a51e6dbcf7e"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.8.9_jdk8u302-ga/Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz"
+    version = "8.0.302"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Dragonwell JDK"
+    sha256 = "045166d6dee2e55e2571bb9c02dcf822b538d44a9b5aaac918032e8e137ca512"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/alibaba/dragonwell11/releases/download/11.0.12.8-GA/Alibaba_Dragonwell_11.0.12.8_x64_linux.tar.gz"
+    version = "11.0.12"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[stacks]]
+  id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+  id = "io.paketo.stacks.tiny"
+
+[[stacks]]
+  id = "*"
