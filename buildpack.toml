@@ -152,9 +152,9 @@ api = "0.6"
   [[metadata.dependencies]]
     id = "jdk"
     name = "Dragonwell JDK"
-    sha256 = "a3b65bf4d0bc0c64f28efb678a0e07882f17e484cc1e6d08bcb036a650bb1d8c"
+    sha256 = "9070ba1e70edb984d4a270bf21114a0b388f84a76b500e0c168540892b3399b2"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/alibaba/dragonwell17/releases/download/dragonwell-17.0.1.0.1%2B39_jdk-17.0.1-ga/Alibaba_Dragonwell_17.0.1.0.1%2B39_x64_linux.tar.gz"
+    uri = "https://github.com/alibaba/dragonwell17/releases/download/dragonwell-17.0.1.0.1%2B12_jdk-17.0.1-ga/Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz"
     version = "17.0.1"
 
     [[metadata.dependencies.licenses]]
