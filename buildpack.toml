@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-api = "0.6"
+api = "0.7"
 
 [buildpack]
   description = "A Cloud Native Buildpack that provides the Alibaba Dragonwell implementations of JREs and JDKs"
@@ -21,6 +21,7 @@ api = "0.6"
   keywords = ["java", "jvm", "jre", "jdk"]
   name = "Paketo Alibaba Dragonwell Buildpack"
   version = "{{.version}}"
+  sbom-formats = ["application/vnd.cyclonedx+json", "application/vnd.syft+json"]
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -132,6 +133,10 @@ api = "0.6"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.8.9_jdk8u302-ga/Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz"
     version = "8.0.302"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.302"
+    cpes = [
+      "cpe:2.3:a:oracle:jdk:1.8.0:update302:*:*:*:*:*:*:*"
+    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -144,6 +149,10 @@ api = "0.6"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.12.8_jdk-11.0.12-ga/Alibaba_Dragonwell_11.0.12.8_x64_linux.tar.gz"
     version = "11.0.12"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.12"
+    cpes = [
+      "cpe:2.3:a:oracle:jdk:11.0.12:*:*:*:*:*:*:*"
+    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -156,6 +165,10 @@ api = "0.6"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/alibaba/dragonwell17/releases/download/dragonwell-17.0.1.0.1%2B12_jdk-17.0.1-ga/Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz"
     version = "17.0.1"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@17.0.1"
+    cpes = [
+      "cpe:2.3:a:oracle:jdk:17.0.1:*:*:*:*:*:*:*"
+    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
