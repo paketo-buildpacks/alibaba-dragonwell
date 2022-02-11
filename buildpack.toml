@@ -127,14 +127,14 @@ api = "0.7"
     name = "JAVA_TOOL_OPTIONS"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update312:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update302:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Dragonwell JDK"
-    purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.312"
-    sha256 = "2e1dfdacfe64a6b2f797cffd7ff8ee8cf6424d29fa594376a6916b1686a38433"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.302"
+    sha256 = "cd83125cde0a3a2a12d04c72abe61a522af9071a3d7ada8156c42a51e6dbcf7e"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.9.10_jdk8u312-ga/Alibaba_Dragonwell_8.9.10_x64_linux.tar.gz"
-    version = "8.0.312"
+    uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-8.8.9_jdk8u302-ga/Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz"
+    version = "8.0.302"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
