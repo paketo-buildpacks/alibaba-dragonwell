@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/alibaba-dragonwell
+module github.com/paketo-buildpacks/alibaba-dragonwell/v2
 
 go 1.17
 
