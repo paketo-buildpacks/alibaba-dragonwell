@@ -141,14 +141,14 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:11.0.14:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:11.0.15:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Dragonwell JDK"
-    purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.14"
-    sha256 = "f44fe94aa5ef14a67ed446698dd055ac1ab726ecb516de16b3cab24c666a71ae"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.15"
+    sha256 = "2406a9b12682d443aa606213d6c00ec83d96b2d157a70728edd6b9bca80c4eab"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.14.10_jdk-11.0.14-ga/Alibaba_Dragonwell_11.0.14.10_x64_linux.tar.gz"
-    version = "11.0.14"
+    uri = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-11.0.15.11.9_jdk-11.0.15-ga/Alibaba_Dragonwell_11.0.15.11.9_x64_linux.tar.gz"
+    version = "11.0.15"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
