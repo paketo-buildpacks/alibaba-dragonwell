@@ -23,7 +23,7 @@ dependencies:
   cpe_pattern:     "update[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
   with:
-    glob:       Alibaba_Dragonwell_[\d\.]+_x64_linux.tar.gz$
+    glob:       Alibaba_Dragonwell_.*[\d\.]+_x64_linux.tar.gz$
     repository: dragonwell8
     token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 11
@@ -31,7 +31,7 @@ dependencies:
   version_pattern: "11\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
   with:
-    glob:       Alibaba_Dragonwell_[\d\.]+_x64_linux.tar.gz$
+    glob:       Alibaba_Dragonwell_.*[\d\.]+_x64_linux.tar.gz$
     repository: dragonwell11
     token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 17
@@ -39,6 +39,6 @@ dependencies:
   version_pattern: "17\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
   with:
-    glob:       Alibaba_Dragonwell_[\d\.+]+_x64_linux.tar.gz$
+    glob:       Alibaba_Dragonwell_.*[\d\.+]+_x64_linux.tar.gz$
     repository: dragonwell17
     token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
