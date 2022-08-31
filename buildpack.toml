@@ -19,7 +19,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/alibaba-dragonwell"
   id = "paketo-buildpacks/alibaba-dragonwell"
   keywords = ["java", "jvm", "jre", "jdk"]
-  name = "Paketo Alibaba Dragonwell Buildpack"
+  name = "Paketo Buildpack for Alibaba Dragonwell"
   sbom-formats = ["application/vnd.cyclonedx+json", "application/vnd.syft+json"]
   version = "{{.version}}"
 
