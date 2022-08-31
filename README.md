@@ -1,6 +1,6 @@
 # `gcr.io/paketo-buildpacks/dragonwell`
 
-The Paketo Alibaba Dragonwell Buildpack is a Cloud Native Buildpack that provides the Alibaba Dragonwell implementations of JREs and JDKs.
+The Paketo Buildpack for Alibaba Dragonwell is a Cloud Native Buildpack that provides the Alibaba Dragonwell implementations of JREs and JDKs.
 
 This buildpack is designed to work in collaboration with other buildpacks which request contributions of JREs and JDKs.
 
