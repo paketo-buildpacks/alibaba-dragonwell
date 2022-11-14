@@ -143,9 +143,9 @@ api = "0.7"
     id = "jdk"
     name = "Dragonwell JDK"
     purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.352"
-    sha256 = "59fc886d8e2dd3d8ebbe3d378dafa0d37fe20cc24d366e2bbcc7958edbbf6566"
+    sha256 = "45b20c04ba93f8c25f1dcc75966bec461224ee9f875fdf3f49a09eb4606f3149"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-extended-8.13.14_jdk8u352-ga/Alibaba_Dragonwell_Extended_8.13.14_x64_linux.tar.gz"
+    uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-standard-8.13.14_jdk8u352-ga/Alibaba_Dragonwell_Standard_8.13.14_x64_linux.tar.gz"
     version = "8.0.352"
 
     [[metadata.dependencies.licenses]]
