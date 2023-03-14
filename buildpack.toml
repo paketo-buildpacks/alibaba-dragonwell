@@ -145,7 +145,7 @@ api = "0.7"
     purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.362"
     sha256 = "c3858ce1c7310fd0984b0c3906a273b27207e40fca426759dbdf570ae748454e"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/alibaba/dragonwell8/releases/download/dragonwell-extended-8.14.15_jdk8u362-ga/Alibaba_Dragonwell_Extended_8.14.15_x64_linux.tar.gz"
+    uri = "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.14.15_jdk8u362-ga/Alibaba_Dragonwell_Extended_8.14.15_x64_linux.tar.gz"
     version = "8.0.362"
 
     [[metadata.dependencies.licenses]]
@@ -159,7 +159,7 @@ api = "0.7"
     purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.18"
     sha256 = "2360b063f1099c0ab7def15ec83c7344ae21038e5a85139132dc4005a8d5a940"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/alibaba/dragonwell11/releases/download/dragonwell-standard-11.0.18.14_jdk-11.0.18-ga/Alibaba_Dragonwell_Standard_11.0.18.14.9_x64_linux.tar.gz"
+    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.18.14_jdk-11.0.18-ga/Alibaba_Dragonwell_Standard_11.0.18.14.9_x64_linux.tar.gz"
     version = "11.0.18"
 
     [[metadata.dependencies.licenses]]
