@@ -34,7 +34,7 @@ dependencies:
   version_pattern: "11\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
   with:
-    glob:       Alibaba_Dragonwell_.*[\d\.]+_x64_linux.tar.gz$
+    glob:       Alibaba_Dragonwell_Extended.*[\d\.]+_x64_linux.tar.gz$
     repository: dragonwell11
     token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
 - name:            JDK 17
