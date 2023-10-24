@@ -159,9 +159,11 @@ api = "0.7"
     id = "jdk"
     name = "Dragonwell JDK"
     purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.20"
-    sha256 = "5011ac706a856b58642ba51615eaa5d874f94cd8abe6e56fbc32666130893419"
+    sha256 = "b7397d3fdffb3574b2b9fe47d58fb6d8230100c417a37c636bda4641b6408223"
+    source = "https://github.com/dragonwell-project/dragonwell11/archive/refs/tags/dragonwell-extended-11.0.20.16_jdk-11.0.20-ga.tar.gz"
+    source-sha256 = "342bd46f5eda20097dcd5ed3a7347a961fed04d7511741f2ff6e1214a9aeee41"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.20.16_jdk-11.0.20-ga/Alibaba_Dragonwell_Standard_11.0.20.16.8_x64_linux.tar.gz"
+    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.20.16_jdk-11.0.20-ga/Alibaba_Dragonwell_Extended_11.0.20.16.8_x64_linux.tar.gz"
     version = "11.0.20"
 
     [[metadata.dependencies.licenses]]
