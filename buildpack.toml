@@ -223,11 +223,11 @@ api = "0.7"
     id = "jdk"
     name = "Dragonwell JDK"
     purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.23?arch=arm64"
-    sha256 = "7541ec129a2f75bdbe8690db17ff4d61eb3ab8cd8b4933d7247bb90d7b162995"
+    sha256 = "2f399231644fe1e3f1b4b5298e85f21f4863017767e9e5afb00ee46e2d7780d9"
     source = "https://github.com/dragonwell-project/dragonwell11/archive/refs/tags/dragonwell-extended-11.0.23.20_jdk-11.0.23-ga.tar.gz"
     source-sha256 = "f79a4d3b338acdf3a28f96dbfa13de588156537cf23b42ab7a1e7e3e5b549f8b"
     stacks = ["*"]
-    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.23.19_jdk-11.0.23-ga/Alibaba_Dragonwell_Standard_11.0.23.19.9_aarch64_linux.tar.gz"
+    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.23.20_jdk-11.0.23-ga/Alibaba_Dragonwell_Extended_11.0.23.20.9_aarch64_linux.tar.gz"
     version = "11.0.23"
 
     [[metadata.dependencies.licenses]]
