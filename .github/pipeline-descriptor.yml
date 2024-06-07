@@ -2,6 +2,9 @@ github:
   username: ${{ secrets.JAVA_GITHUB_USERNAME }}
   token:    ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
 
+helpers:
+  "bin/helper": "github.com/paketo-buildpacks/libjvm/cmd/helper"
+
 codeowners:
 - path:  "*"
   owner: "@paketo-buildpacks/java-maintainers"
@@ -45,3 +48,50 @@ dependencies:
     glob:       Alibaba_Dragonwell_.*[\d\.+]+_x64_linux.tar.gz$
     repository: dragonwell17
     token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+- name:            JDK 21
+  id:              jdk
+  version_pattern: "21\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
+  with:
+    glob:       Alibaba_Dragonwell_.*[\d\.+]+_x64_linux.tar.gz$
+    repository: dragonwell21
+    token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+
+# ARM64
+- name:            JDK 8 ARM64
+  id:              jdk
+  version_pattern: "8\\.[\\d]+\\.[\\d]+"
+  cpe_pattern:     "update[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
+  with:
+    glob:       Alibaba_Dragonwell_Extended.*[\d\.]+_aarch64_linux.tar.gz$
+    repository: dragonwell8
+    token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch:       arm64
+- name:            JDK 11 ARM64
+  id:              jdk
+  version_pattern: "11\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
+  with:
+    glob:       Alibaba_Dragonwell_Extended.*[\d\.]+_aarch64_linux.tar.gz$
+    repository: dragonwell11
+    token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch:       arm64
+- name:            JDK 17 ARM64
+  id:              jdk
+  version_pattern: "17\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
+  with:
+    glob:       Alibaba_Dragonwell_.*[\d\.+]+_aarch64_linux.tar.gz$
+    repository: dragonwell17
+    token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch:       arm64
+- name:            JDK 21 ARM64
+  id:              jdk
+  version_pattern: "21\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/alibaba-dragonwell-dependency:main
+  with:
+    glob:       Alibaba_Dragonwell_.*[\d\.+]+_aarch64_linux.tar.gz$
+    repository: dragonwell21
+    token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch:       arm64
