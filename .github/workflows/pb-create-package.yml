@@ -180,7 +180,7 @@ jobs:
                     --format "${FORMAT}" $([ -n "$TTL_SH_PUBLISH" ] && [ "$TTL_SH_PUBLISH" = "true" ] && echo "--publish")
                 fi
               env:
-                PACKAGES: docker.io/paketobuildpacks/alibaba-dragonwell gcr.io/paketo-buildpacks/alibaba-dragonwell
+                PACKAGES: docker.io/paketobuildpacks/alibaba-dragonwell
                 PUBLISH: "true"
                 VERSION: ${{ steps.version.outputs.version }}
                 VERSION_MAJOR: ${{ steps.version.outputs.version-major }}
