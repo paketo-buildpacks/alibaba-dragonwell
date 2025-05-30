@@ -10,7 +10,7 @@ codeowners:
   owner: "@paketo-buildpacks/java-maintainers"
 
 package:
-  repositories:   ["docker.io/paketobuildpacks/alibaba-dragonwell","gcr.io/paketo-buildpacks/alibaba-dragonwell"]
+  repositories:   ["docker.io/paketobuildpacks/alibaba-dragonwell"]
   register:       true
   registry_token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
 
