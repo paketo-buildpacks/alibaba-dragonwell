@@ -235,16 +235,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:17.0.14:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:17.0.15:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Dragonwell JDK"
-    purl = "pkg:generic/alibaba/dragonwell-jdk@17.0.14?arch=arm64"
-    sha256 = "eef32719cb552412b489e6ab6921329c3de29bc315f62bfc2113b7c76e871131"
-    source = "https://github.com/dragonwell-project/dragonwell17/archive/refs/tags/dragonwell-standard-17.0.14.0.15+7_jdk-17.0.14-ga.tar.gz"
-    source-sha256 = "677720f414807458181ce81d8871054277ebd2adf3e58be6912407dde85e9e4b"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@17.0.15?arch=arm64"
+    sha256 = "09ef7bfa928b391f317e5a0712dd58516dae304144094c8309bc245f716f04b7"
+    source = "https://github.com/dragonwell-project/dragonwell17/archive/refs/tags/dragonwell-standard-17.0.15.0.16+6_jdk-17.0.15-ga.tar.gz"
+    source-sha256 = "eda3e0a96f14daf0372f0ec5e6abc2145bc6b552c3f6ff0fa53c327d9db32108"
     stacks = ["*"]
-    uri = "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.14.0.15%2B7_jdk-17.0.14-ga/Alibaba_Dragonwell_Standard_17.0.14.0.15.7_aarch64_linux.tar.gz"
-    version = "17.0.14"
+    uri = "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.15.0.16%2B6_jdk-17.0.15-ga/Alibaba_Dragonwell_Standard_17.0.15.0.16.6_aarch64_linux.tar.gz"
+    version = "17.0.15"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
