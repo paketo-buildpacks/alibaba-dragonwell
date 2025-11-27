@@ -203,16 +203,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update462:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update472:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Dragonwell JDK"
-    purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.462?arch=arm64"
-    sha256 = "39bc1ead3418371d0b624a5434fb9f1d59d22eedbd814255f8131e3804abc493"
-    source = "https://github.com/dragonwell-project/dragonwell8/archive/refs/tags/dragonwell-extended-8.26.25_jdk8u462-ga.tar.gz"
-    source-sha256 = "795f70e473122081eee70ef436e431ebd6dd5570584385fa1b9f6a1168dbf1c7"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@8.0.472?arch=arm64"
+    sha256 = "64c0e1a0db52a0ca6a72131af553e8f54e45305d76c33ff1ee25b6f89dd5b806"
+    source = "https://github.com/dragonwell-project/dragonwell8/archive/refs/tags/dragonwell-extended-8.27.26_jdk8u472-ga.tar.gz"
+    source-sha256 = "e4f893139ccdd5b41c2f4cee881f4c37509809181edee427d3d52af7e7ab8561"
     stacks = ["*"]
-    uri = "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.26.25_jdk8u462-ga/Alibaba_Dragonwell_Extended_8.26.25_aarch64_linux.tar.gz"
-    version = "8.0.462"
+    uri = "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.27.26_jdk8u472-ga/Alibaba_Dragonwell_Extended_8.27.26_aarch64_linux.tar.gz"
+    version = "8.0.472"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
