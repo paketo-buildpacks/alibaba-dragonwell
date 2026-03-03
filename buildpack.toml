@@ -191,11 +191,11 @@ api = "0.7"
     id = "jdk"
     name = "Dragonwell JDK"
     purl = "pkg:generic/alibaba/dragonwell-jdk@21.0.10?arch=amd64"
-    sha256 = "de94de33aa08b9e5438df4d433eded93695b751d1287febe75f115062cee9db7"
-    source = "https://github.com/dragonwell-project/dragonwell21/archive/refs/tags/dragonwell-standard-21.0.10.0.10+7_jdk-21.0.10-ga.tar.gz"
-    source-sha256 = "2136f0b7ee56fae245c6ff7a04c9bf58ca0065c733a493d20c367225d65f32dd"
+    sha256 = "2d9de0eb5377cb433c7b26c4e689b5f5a034006f49c83cd4343796850478895c"
+    source = "https://github.com/dragonwell-project/dragonwell21/archive/refs/tags/dragonwell-extended-21.0.10.0.10+7_jdk-21.0.10-ga.tar.gz"
+    source-sha256 = "d2130166f7dd5b8364f69be2de5d94410452c6430052c4a88fce03ffa0544959"
     stacks = ["*"]
-    uri = "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.10.0.10%2B7_jdk-21.0.10-ga/Alibaba_Dragonwell_Standard_21.0.10.0.10.7_x64_linux.tar.gz"
+    uri = "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.10.0.10%2B7_jdk-21.0.10-ga/Alibaba_Dragonwell_Extended_21.0.10.0.10.7_x64_linux.tar.gz"
     version = "21.0.10"
 
     [[metadata.dependencies.licenses]]
