@@ -155,16 +155,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:11.0.30:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:11.0.31:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Dragonwell JDK"
-    purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.30?arch=amd64"
-    sha256 = "d4caf45c32a1f6b9db5be401735aa23181b8000d7f570f480bc8c7fed1c93495"
-    source = "https://github.com/dragonwell-project/dragonwell11/archive/refs/tags/dragonwell-extended-11.0.30.27_jdk-11.0.30-ga.tar.gz"
-    source-sha256 = "251722117f7a302626e9e441a86dafb162cafb0b6d10b049148b9233ff06524f"
+    purl = "pkg:generic/alibaba/dragonwell-jdk@11.0.31?arch=amd64"
+    sha256 = "5041df9582593c9880c1bff23f504ae9a09a31ca88810a7f842799cf222956de"
+    source = "https://github.com/dragonwell-project/dragonwell11/archive/refs/tags/dragonwell-extended-11.0.31.28_jdk-11.0.31-ga.tar.gz"
+    source-sha256 = "6ab3292ea568b6cf62b81b4b1714bfc1b663e721a83ada0acfbf185f7272ff84"
     stacks = ["*"]
-    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.30.27_jdk-11.0.30-ga/Alibaba_Dragonwell_Extended_11.0.30.27.7_x64_linux.tar.gz"
-    version = "11.0.30"
+    uri = "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.31.28_jdk-11.0.31-ga/Alibaba_Dragonwell_Extended_11.0.31.28.11_x64_linux.tar.gz"
+    version = "11.0.31"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
